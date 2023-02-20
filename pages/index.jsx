@@ -13,7 +13,7 @@ import { Container } from 'reactstrap';
 function Home({ chapterLogos, previewProjects }) {
   return (
     <>
-      <Head title="Hack4Impact" />
+      <Head title="Hack4Impact UTK" />
       <ToastContainer />
       <Banner />
       <OurWorkSection projects={previewProjects} />

@@ -5,17 +5,18 @@ function Logo() {
     <>
       <Link href="/">
         <a className="image-container" ariaLabel="Go to homepage">
-          <img
+          {/* <img
             className="university-logo"
             height="40"
             src="https://images.ctfassets.net/dz50cburkkql/7trWXZia556Z9uftKAMCz/dc3b7d7fc1aa07ca0d752d09df6a01a5/Georgia_Tech_Yellow_Jackets_logo.svg"
             alt=""
-          />
+          /> */}
           <img
             className="hack4impact-logo"
-            height="40"
-            src="/images/logo.svg"
-            alt="Hack4Impact logo"
+            width={400}
+            height={60}
+            src="/images/utk-logo.svg"
+            alt="Hack4Impact UTK logo"
           />
         </a>
       </Link>
@@ -23,7 +24,7 @@ function Logo() {
         .image-container {
           display: flex;
           align-items: center;
-          height: 40px;
+          height: 60px;
           padding: 0 !important;
           margin-right: auto;
 
@@ -35,6 +36,9 @@ function Logo() {
             border-right: 1px solid #666;
             padding-right: 15px;
             margin-right: 15px;
+          }
+          .hack4impact-logo {
+            padding-bottom: 10px;
           }
 
           @media (max-width: 420px) {
