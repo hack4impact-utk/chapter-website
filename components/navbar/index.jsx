@@ -95,7 +95,7 @@ function Nav() {
             display: inline-block;
             color: var(--primary-dark);
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 0 20px;
             border-radius: 5px;
             transition: color 0.2s;
           }

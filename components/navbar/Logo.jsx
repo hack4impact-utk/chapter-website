@@ -13,7 +13,6 @@ function Logo() {
           /> */}
           <img
             className="hack4impact-logo"
-            width={400}
             height={60}
             src="/images/utk-logo.svg"
             alt="Hack4Impact UTK logo"
@@ -38,7 +37,6 @@ function Logo() {
             margin-right: 15px;
           }
           .hack4impact-logo {
-            padding-bottom: 10px;
           }
 
           @media (max-width: 420px) {
