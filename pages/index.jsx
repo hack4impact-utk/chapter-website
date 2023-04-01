@@ -23,7 +23,6 @@ function Home({ chapterLogos, previewProjects }) {
           <InvolveSection />
         </Container>
       </Section>
-      <PartnerSection />
       <OtherChapters chapterLogos={chapterLogos} />
     </>
   );
