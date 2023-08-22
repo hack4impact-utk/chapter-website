@@ -13,6 +13,7 @@ const BlockQuote = ({ text, style }) => (
     <p className="text-right blockquote-fancy-title">
       Faculty Coordinator of the USFSP Neighborhood News Bureau
     </p>
+    
   </div>
 );
 
