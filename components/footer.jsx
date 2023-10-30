@@ -61,19 +61,20 @@ function Footer() {
             <ul>
               {/* TODO: Update these for your university! */}
               <li>
-                <a href="https://www.linkedin.com/company/hack4impact/mycompany/">LinkedIn</a>
+                <a
+                  href="https://www.linkedin.com/company/hack4impact-utk"
+                  target="blank"
+                  rel="noreferrer">
+                  LinkedIn
+                </a>
               </li>
               <li>
-                <a href="https://github.com/hack4impact-utk">Github</a>
-              </li>
-              <li>
-                <a href="https://medium.com/hack4impact">Blog</a>
+                <a href="https://github.com/hack4impact-utk" target="_blank" rel="noreferrer">
+                  Github
+                </a>
               </li>
               <li>
                 <a href="mailto:utk@hack4impact.org">Email</a>
-              </li>
-              <li>
-                <a href="https://www.notion.so/h4i">Notion & Wiki</a>
               </li>
             </ul>
           </div>

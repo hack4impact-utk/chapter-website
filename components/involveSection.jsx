@@ -11,7 +11,7 @@ const InvolveSection = () => (
         <h3 className="text-title text-center">Students</h3>
         <Link href="/apply/students">
           <a>
-            <img src="/images/h4i-funny.jpg" className="img-fluid" alt="Sp18 team" />
+            <img src="/images/utk23_1.jpg" className="img-fluid" alt="Fa23 team" />
           </a>
         </Link>
       </div>
@@ -38,7 +38,7 @@ const InvolveSection = () => (
         <h3 className="text-title text-center">Nonprofits</h3>
         <Link href="/apply/nonprofits">
           <a>
-            <img src="/images/team-cheer.jpg" className="img-fluid" alt="Fa19 team" />
+            <img src="/images/utk23_2.jpg" className="img-fluid" alt="Fa23 team" />
           </a>
         </Link>
         <Row>
