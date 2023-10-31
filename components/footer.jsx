@@ -74,6 +74,11 @@ function Footer() {
                 </a>
               </li>
               <li>
+                <a href="https://www.youtube.com/@Hack4ImpactUTK" target="_blank" rel="noreferrer">
+                  YouTube
+                </a>
+              </li>
+              <li>
                 <a href="mailto:utk@hack4impact.org">Email</a>
               </li>
             </ul>
