@@ -4,7 +4,7 @@
 
 ## Our tech stack
 
-This template is built for generating a _static, super-efficient_ website that you can easily update overtime. For this, NextJS + Contentful formed the perfect dream team. 
+This template is built for generating a _static, super-efficient_ website that you can easily update overtime. For this, NextJS + Contentful formed the perfect dream team.
 
 ### NextJS ⚙️
 
