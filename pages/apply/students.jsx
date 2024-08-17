@@ -24,7 +24,8 @@ function Students({
         subHeadline={
           'Students are a core part of what makes Hack4Impact. Joining Hack4Impact is the perfect way to give back while developing new skills and making long-lasting friendships.'
         }>
-        {applicationLink && <ActionButton link={applicationLink}>Apply Now</ActionButton>}
+        {applicationLink && <ActionButton link="https://docs.google.com/forms/d/1i_R86Z0D4S7IkILq5Gt8XI9aA-Zwv-DXJaV1cpTu84I/edit">Apply Now</ActionButton>}
+        //Temporarily changed link from link=studentApplication
         {openRolesLink && (
           <ActionButton white link={openRolesLink}>
             View Open Positions
