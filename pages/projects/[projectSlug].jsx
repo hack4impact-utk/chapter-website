@@ -117,11 +117,12 @@ export async function getStaticPaths() {
   }
   `);
 
-  const paths = projectsCollection.items.map(({ urlSlug }) => ({
-    params: {
-      projectSlug: urlSlug,
-    },
+  const paths = (projectsCollection.items || [])
+    .filter((item) => item && item.urlSlug) // skip nulls or missing slugs
+    .map(({ urlSlug }) => ({
+      params: { projectSlug: urlSlug },
   }));
+
 
   return {
     paths,
