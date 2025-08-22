@@ -121,8 +121,7 @@ export async function getStaticPaths() {
     .filter((item) => item && item.urlSlug) // skip nulls or missing slugs
     .map(({ urlSlug }) => ({
       params: { projectSlug: urlSlug },
-  }));
-
+    }));
 
   return {
     paths,

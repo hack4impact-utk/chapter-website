@@ -3,23 +3,24 @@ import { useRouter } from 'next/router';
 import Footer from '../components/footer';
 import Nav from '../components/navbar';
 import { PageTransition } from 'next-page-transitions';
+import { initializeGA, logPage } from '../components/Analytics';
 
 function App({ Component, pageProps }) {
   const router = useRouter();
   const activeRoute = router.pathname;
 
   // ping Google Analytics on every route change
-  // useEffect(() => {
-  //   initializeGA();
-  //   logPage();
-  // }, [activeRoute]);
+  useEffect(() => {
+    initializeGA();
+    logPage();
+  }, [activeRoute]);
 
   return (
     <div>
       <Nav />
-      {/* <PageTransition timeout={300} classNames="page-transition"> */}
+      <PageTransition timeout={300} classNames="page-transition">
         <Component {...pageProps} />
-      {/* </PageTransition> */}
+      </PageTransition>
       <Footer />
       <style jsx global>{`
         .page-transition-enter {

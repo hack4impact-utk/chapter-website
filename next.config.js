@@ -1,15 +1,15 @@
 // next.config.js
 module.exports = {
   babel: {
-    presets: ["next/babel"],
+    presets: ['next/babel'],
     plugins: [
       [
-        "styled-jsx/babel",
+        'styled-jsx/babel',
         {
-          plugins: ["styled-jsx-plugin-sass"],
+          plugins: ['styled-jsx-plugin-sass'],
         },
       ],
-      "inline-react-svg",
+      'inline-react-svg',
     ],
   },
 };
