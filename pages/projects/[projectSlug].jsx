@@ -81,18 +81,23 @@ function ProjectPage({
           text-align: center;
           margin-bottom: 50px;
         }
+
         :global(section) {
           padding: 40px 0;
         }
+
         .thumbnail {
-          @media (min-width: 600px) {
+          width: 100%;
+          object-fit: cover;
+          box-shadow: 0 10px 20px var(--primary-dark-2);
+        }
+
+        @media (min-width: 600px) {
+          .thumbnail {
             position: relative;
             top: -30px;
             max-width: 500px;
           }
-          width: 100%;
-          object-fit: cover;
-          box-shadow: 0 10px 20px var(--primary-dark-2);
         }
       `}</style>
     </>
