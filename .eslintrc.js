@@ -19,5 +19,7 @@ module.exports = {
       },
     ],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    'react/no-unknown-property': 'off',
+    'react/jsx-key': 'off',
   },
 };

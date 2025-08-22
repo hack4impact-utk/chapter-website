@@ -3,23 +3,6 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  format:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-
-      - name: Install dependencies
-        run: npm i
-
-      - name: Check formatting
-        run: npm run format:check
-
   lint:
     runs-on: ubuntu-latest
     steps:

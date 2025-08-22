@@ -26,26 +26,30 @@ function Logo() {
           height: 60px;
           padding: 0 !important;
           margin-right: auto;
+        }
 
-          img {
-            max-height: 100%;
-          }
+        .image-container img {
+          max-height: 100%;
+        }
 
-          .university-logo {
-            border-right: 1px solid #666;
-            padding-right: 15px;
-            margin-right: 15px;
-          }
-          .hack4impact-logo {
-          }
+        .image-container .university-logo {
+          border-right: 1px solid #666;
+          padding-right: 15px;
+          margin-right: 15px;
+        }
 
-          @media (max-width: 420px) {
+        .image-container .hack4impact-logo {
+          /* empty styles remain */
+        }
+
+        @media (max-width: 420px) {
+          .image-container {
             height: 32px;
+          }
 
-            .university-logo {
-              padding-right: 10px;
-              margin-right: 10px;
-            }
+          .image-container .university-logo {
+            padding-right: 10px;
+            margin-right: 10px;
           }
         }
       `}</style>

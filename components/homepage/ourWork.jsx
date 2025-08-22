@@ -45,11 +45,12 @@ function OurWorkSection({ projects }) {
               from={{ opacity: 0, transform: 'translate3d(0,200px,0)' }}
               to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
               {/* eslint-disable react/display-name */}
-              {(item) => (props) => (
-                <Col key={item.key} sm="4" style={props}>
-                  {item}
-                </Col>
-              )}
+              {(item) => (props) =>
+                (
+                  <Col key={item.key} sm="4" style={props}>
+                    {item}
+                  </Col>
+                )}
               {/* eslint-enable react/display-name */}
             </Trail>
           </Row>

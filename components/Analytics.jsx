@@ -1,15 +1,15 @@
-import ReactGA from 'react-ga';
+import { initialize, pageview, event } from 'react-ga';
 
 const initializeGA = () => {
-  ReactGA.initialize('UA-144770649-1');
+  initialize('UA-144770649-1');
 };
 
 const logPage = () => {
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  pageview(window.location.pathname + window.location.search);
 };
 
 const logEvent = (name, action) => {
-  ReactGA.event({
+  event({
     category: name,
     action: action,
   });

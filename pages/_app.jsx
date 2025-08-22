@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
 import Nav from '../components/navbar';
-import { initializeGA, logPage } from '../components/Analytics';
 import { PageTransition } from 'next-page-transitions';
+import { initializeGA, logPage } from '../components/Analytics';
 
 function App({ Component, pageProps }) {
   const router = useRouter();
