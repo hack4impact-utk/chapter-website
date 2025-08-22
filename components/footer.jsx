@@ -92,36 +92,39 @@ function Footer() {
           padding-top: 70px;
           color: white;
           font-size: 15px;
+        }
 
-          .footer-logo-box {
-            margin-bottom: 20px;
-          }
+        .footer-section .footer-logo-box {
+          margin-bottom: 20px;
+        }
 
-          h4 {
-            font-size: inherit;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 15px;
-          }
-          a,
-          a:visited {
-            color: inherit;
-          }
-          a.email-link {
-            text-decoration: underline !important;
-          }
-          a:hover {
-            color: var(--secondary-seafoam);
-          }
+        .footer-section h4 {
+          font-size: inherit;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
 
-          ul {
-            list-style-type: none;
-            padding: 0;
+        .footer-section a,
+        .footer-section a:visited {
+          color: inherit;
+        }
 
-            li {
-              padding-bottom: 5px;
-            }
-          }
+        .footer-section a.email-link {
+          text-decoration: underline !important;
+        }
+
+        .footer-section a:hover {
+          color: var(--secondary-seafoam);
+        }
+
+        .footer-section ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        .footer-section ul li {
+          padding-bottom: 5px;
         }
       `}</style>
     </section>
