@@ -1,0 +1,15 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = {
+  href: string;
+  text: string;
+  attributes?: HTMLAttributes<"a">;
+};
+
+const { href, text, attributes } = Astro.props;
+---
+
+<a href={href} class="transition-colors hover:text-orange-300" {...attributes}
+  >{text}</a
+>

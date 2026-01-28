@@ -1,0 +1,81 @@
+---
+import { content } from "../../content/content";
+import FooterHeader from "./footer-header.astro";
+import FooterLink from "./footer-link.astro";
+import FooterLogo from "./footer-logo.astro";
+
+const { studentApplicationLink, nonprofitApplicationLink } = content;
+---
+
+<section class="min-h-70 bg-primary pt-16 text-white">
+  <div class="mx-auto max-w-7xl px-5">
+    <div class="grid grid-cols-1 gap-y-10 max-md:pb-4 md:grid-cols-10">
+      <div class="md:col-span-5">
+        <div class="mb-5">
+          <FooterLogo />
+        </div>
+
+        <p>
+          For all inquiries of partnership or sponsorship, please contact us at{
+            " "
+          }
+          <FooterLink
+            href="mailto:utk@hack4impact.org"
+            text="utk@hack4impact.org"
+          />.
+        </p>
+      </div>
+
+      <div class="hidden md:col-span-1 md:block"></div>
+
+      <div class="md:col-span-2">
+        <FooterHeader title="Apply Now" />
+        <ul class="list-none space-y-1 p-0">
+          <li>
+            <FooterLink href="/apply" text="How to apply" />
+          </li>
+          <li>
+            <FooterLink href={studentApplicationLink} text="Students" />
+          </li>
+          <li>
+            <FooterLink href={nonprofitApplicationLink} text="Non-profits" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <FooterHeader title="Follow us" />
+        <ul class="list-none space-y-1 p-0">
+          <li>
+            <FooterLink
+              href="https://www.linkedin.com/company/hack4impact-utk"
+              text="LinkedIn"
+              attributes={{ target: "_blank", rel: "noreferrer" }}
+            />
+          </li>
+          <li>
+            <FooterLink
+              href="https://github.com/hack4impact-utk"
+              text="Github"
+              attributes={{ target: "_blank", rel: "noreferrer" }}
+            />
+          </li>
+          <li>
+            <FooterLink
+              href="https://www.youtube.com/@Hack4ImpactUTK"
+              text="YouTube"
+              attributes={{ target: "_blank", rel: "noreferrer" }}
+            />
+          </li>
+          <li>
+            <FooterLink
+              href="mailto:utk@hack4impact.org"
+              text="Email"
+              attributes={{ target: "_blank", rel: "noreferrer" }}
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+
+import Footer from "../components/footer/footer.astro";
+import Navigation from "../components/navigation/navigation.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>Hack4Impact UTK</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="200x200"
+      href="/icons/favicon-200.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="100x100"
+      href="/icons/favicon-100.png"
+    />
+
+    <meta
+      name="description"
+      content="Hack4Impact UTK is a student-run organization that provides a platform for students to learn about technology and software development."
+    />
+  </head>
+  <body class="">
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>

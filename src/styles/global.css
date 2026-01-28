@@ -1,0 +1,15 @@
+@import "./fonts.css";
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "HK Grotesk", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-primary: var(--color-blue-600);
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+}

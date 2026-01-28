@@ -1,0 +1,34 @@
+---
+import Button from "../ui/button.astro";
+---
+
+<section class="w-full px-6">
+  <div
+    class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 pt-12 pb-32 max-md:py-20 max-md:pt-6 md:grid-cols-12"
+  >
+    <div class="md:col-span-7">
+      <img src="/images/banner.svg" alt="" class="h-auto w-full" />
+    </div>
+
+    <div class="md:col-span-5">
+      <h1 class="mb-8 text-6xl leading-tight font-bold max-sm:text-5xl">
+        Building tools for social good
+      </h1>
+
+      <p class="mb-10 text-lg">
+        We empower engineers, designers, activists, and humanitarians to create
+        lasting and impactful social change. If you're a student or a nonprofit,
+        we'd love to get in touch!
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <Button href="/apply" text="Apply Now" variant="primary" />
+        <Button
+          href="mailto:utk@hack4impact.org"
+          text="Contact Us"
+          variant="secondary"
+        />
+      </div>
+    </div>
+  </div>
+</section>

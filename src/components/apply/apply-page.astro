@@ -1,0 +1,77 @@
+---
+import { content } from "../../content/content";
+import Button from "../ui/button.astro";
+import Blockquote from "./blockquote.astro";
+
+const {
+  studentApplicationLink,
+  nonprofitApplicationLink,
+  studentQuote,
+  studentAuthor,
+  studentTitle,
+  nonprofitQuote,
+  nonprofitAuthor,
+  nonprofitTitle,
+} = content;
+---
+
+<section
+  class="w-full bg-primary pt-35 pb-20 text-center text-white max-md:py-10 max-md:pt-30"
+>
+  <div class="mx-auto max-w-5xl px-5">
+    <h1 class="text-6xl font-bold max-md:text-4xl">Apply</h1>
+
+    <div class="mt-5 px-10">
+      <p class="text-lg">
+        Join our community of engineers, designers, activists, and humanitarians
+        working to create lasting social impact. Whether you're a student or a
+        nonprofit, we'd love to work with you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div
+  class="mx-auto h-0 w-0 border-t-60 border-r-100 border-l-100 border-primary border-r-transparent border-l-transparent"
+>
+</div>
+
+<section class="mx-auto max-w-7xl px-5 py-24">
+  <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+    <div class="grid grid-rows-[auto_1fr_auto] text-center">
+      <h3 class="mb-6 text-2xl font-semibold">Students</h3>
+
+      <Blockquote
+        quote={studentQuote}
+        author={studentAuthor}
+        title={studentTitle}
+      />
+
+      <div class="flex justify-center pt-6">
+        <Button
+          href={studentApplicationLink}
+          text="Apply Now"
+          variant="primary"
+        />
+      </div>
+    </div>
+
+    <div class="grid grid-rows-[auto_1fr_auto] text-center">
+      <h3 class="mb-6 text-2xl font-semibold">Nonprofits</h3>
+
+      <Blockquote
+        quote={nonprofitQuote}
+        author={nonprofitAuthor}
+        title={nonprofitTitle}
+      />
+
+      <div class="flex justify-center pt-6">
+        <Button
+          href={nonprofitApplicationLink}
+          text="Apply Now"
+          variant="primary"
+        />
+      </div>
+    </div>
+  </div>
+</section>
